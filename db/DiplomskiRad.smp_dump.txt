@@ -1,0 +1,8 @@
+
+State Machine - |test_sema|Aparat_za_kafu:inst|r_st_present
+Name r_st_present.state_bit_2 r_st_present.state_bit_1 r_st_present.state_bit_0 
+r_st_present.ST_RESET 0 0 0 
+r_st_present.ST_CHECK_CREDIT 0 0 1 
+r_st_present.ST_PROVIDE_PRODUCT 0 1 0 
+r_st_present.ST_PROVIDE_TOTAL_REFUND 0 1 1 
+r_st_present.ST_ERROR 1 0 1 

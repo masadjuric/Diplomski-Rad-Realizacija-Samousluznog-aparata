@@ -1,0 +1,410 @@
+Simulator report for DiplomskiRad
+Wed May 24 16:27:39 2023
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------+
+; Simulator Summary                            ;
++-----------------------------+----------------+
+; Type                        ; Value          ;
++-----------------------------+----------------+
+; Simulation Start Time       ; 0 ps           ;
+; Simulation End Time         ; 1.0 ms         ;
+; Simulation Netlist Size     ; 192 nodes      ;
+; Simulation Coverage         ;      56.98 %   ;
+; Total Number of Transitions ; 2497           ;
+; Simulation Breakpoints      ; 0              ;
+; Family                      ; MAX7000S       ;
+; Device                      ; EPM7128SLC84-6 ;
++-----------------------------+----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Timing        ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; test_sema.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      56.98 % ;
+; Total nodes checked                                 ; 192          ;
+; Total output ports checked                          ; 172          ;
+; Total output ports with complete 1/0-value coverage ; 98           ;
+; Total output ports with no 1/0-value coverage       ; 73           ;
+; Total output ports with no 1-value coverage         ; 73           ;
+; Total output ports with no 0-value coverage         ; 74           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                            ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                         ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; |test_sema|rising_edge_detector:inst1|inst5                                                              ; |test_sema|rising_edge_detector:inst1|inst5                                                              ; dataout          ;
+; |test_sema|rising_edge_detector:inst1|inst8                                                              ; |test_sema|rising_edge_detector:inst1|inst8                                                              ; dataout          ;
+; |test_sema|rising_edge_detector:inst1|inst                                                               ; |test_sema|rising_edge_detector:inst1|inst                                                               ; dataout          ;
+; |test_sema|rising_edge_detector:inst1|inst4                                                              ; |test_sema|rising_edge_detector:inst1|inst4                                                              ; dataout          ;
+; |test_sema|rising_edge_detector:inst1|inst9                                                              ; |test_sema|rising_edge_detector:inst1|inst9                                                              ; dataout          ;
+; |test_sema|rising_edge_detector:inst1|inst1                                                              ; |test_sema|rising_edge_detector:inst1|inst1                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[2]~11 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[2]~11 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~18 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~18 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|prop_node[3]~8                          ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|prop_node[3]~8                          ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~25 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~25 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~33 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~33 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~34 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~34 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~35 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~35 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~42 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~42 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~43 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~43 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~45 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~45 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~47 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~47 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~57 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~57 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[0]                                                ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[0]                                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~76                                             ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~76                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]                                                ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]                                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~8  ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~8  ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~88                                             ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~88                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]                                                ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]                                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~16 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~16 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~17 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~17 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[3]                                                ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[3]                                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~29 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~29 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~30 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~30 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[4]                                                ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[4]                                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~37 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~37 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~38 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~38 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~39 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~39 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~40 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~40 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~41 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~41 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~42 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~42 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~43 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~43 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~54 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~54 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~55 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~55 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~57 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~57 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[5]                                                ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[5]                                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[6]                                                ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[6]                                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|genr_node[3]~17                         ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|genr_node[3]~17                         ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|bg_out~8                                ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|bg_out~8                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|bg_out~17                               ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|bg_out~17                               ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector2~11                                                              ; |test_sema|Aparat_za_kafu:inst|Selector2~11                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|LessThan2~32                                                              ; |test_sema|Aparat_za_kafu:inst|LessThan2~32                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~70                                                                 ; |test_sema|Aparat_za_kafu:inst|p_comb~70                                                                 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_st_present.state_bit_1                                                  ; |test_sema|Aparat_za_kafu:inst|r_st_present.state_bit_1                                                  ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_st_present.state_bit_0                                                  ; |test_sema|Aparat_za_kafu:inst|r_st_present.state_bit_0                                                  ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product[5]~94                                                     ; |test_sema|Aparat_za_kafu:inst|r_price_product[5]~94                                                     ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~64 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~64 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~66 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~66 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~69 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~69 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~75 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~75 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~83 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~83 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~89 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~89 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~95 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~95 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~152                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~152                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~158                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~158                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~164                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~164                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~64 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~64 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~70 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[3]~70 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~170                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~170                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~175                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~175                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[3]~181                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[3]~181                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[3]~186                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[3]~186                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[4]~192                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[4]~192                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[4]~197                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[4]~197                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~80 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~80 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~82 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~82 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[5]~203                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[5]~203                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[5]~208                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[5]~208                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[6]~214                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[6]~214                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[6]~219                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[6]~219                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector2~18                                                              ; |test_sema|Aparat_za_kafu:inst|Selector2~18                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector2~21                                                              ; |test_sema|Aparat_za_kafu:inst|Selector2~21                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|LessThan2~33                                                              ; |test_sema|Aparat_za_kafu:inst|LessThan2~33                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector16~10                                                             ; |test_sema|Aparat_za_kafu:inst|Selector16~10                                                             ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Equal10~2sexp                                                             ; |test_sema|Aparat_za_kafu:inst|Equal10~2sexp                                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Equal8~2sexp                                                              ; |test_sema|Aparat_za_kafu:inst|Equal8~2sexp                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~78bal                                          ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~78bal                                          ; dataout          ;
+; |test_sema|SCKL                                                                                          ; |test_sema|SCKL~corein                                                                                   ; dataout          ;
+; |test_sema|i_refund_request                                                                              ; |test_sema|i_refund_request~corein                                                                       ; dataout          ;
+; |test_sema|i_money_value[2]                                                                              ; |test_sema|i_money_value[2]~corein                                                                       ; dataout          ;
+; |test_sema|i_money_value[1]                                                                              ; |test_sema|i_money_value[1]~corein                                                                       ; dataout          ;
+; |test_sema|i_money_value[0]                                                                              ; |test_sema|i_money_value[0]~corein                                                                       ; dataout          ;
+; |test_sema|i_product_sel[2]                                                                              ; |test_sema|i_product_sel[2]~corein                                                                       ; dataout          ;
+; |test_sema|i_product_sel[1]                                                                              ; |test_sema|i_product_sel[1]~corein                                                                       ; dataout          ;
+; |test_sema|i_product_sel[0]                                                                              ; |test_sema|i_product_sel[0]~corein                                                                       ; dataout          ;
+; |test_sema|o_product_delivery_sel[2]                                                                     ; |test_sema|o_product_delivery_sel[2]                                                                     ; padio            ;
+; |test_sema|o_product_delivery_sel[1]                                                                     ; |test_sema|o_product_delivery_sel[1]                                                                     ; padio            ;
+; |test_sema|o_product_delivery_sel[0]                                                                     ; |test_sema|o_product_delivery_sel[0]                                                                     ; padio            ;
+; |test_sema|o_money_refund_value_ena                                                                      ; |test_sema|o_money_refund_value_ena                                                                      ; padio            ;
+; |test_sema|o_money_refund_value[6]                                                                       ; |test_sema|o_money_refund_value[6]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[0]                                                                       ; |test_sema|o_money_refund_value[0]                                                                       ; padio            ;
+; |test_sema|o_product_delivery_sel_ena                                                                    ; |test_sema|o_product_delivery_sel_ena                                                                    ; padio            ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~238                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~238                                            ; dataout          ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                               ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                         ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~32 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~32 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~44 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~44 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~46 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~46 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~54 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~54 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~55 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~55 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~56 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~56 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~77                                             ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~77                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~89                                             ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~89                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~15 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~15 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~24 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~24 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~25 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~25 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~27 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~27 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~28 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~28 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~56 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~56 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector2~17                                                              ; |test_sema|Aparat_za_kafu:inst|Selector2~17                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]                                                ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]                                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~57                                                                 ; |test_sema|Aparat_za_kafu:inst|p_comb~57                                                                 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~66                                                                 ; |test_sema|Aparat_za_kafu:inst|p_comb~66                                                                 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector17~3                                                              ; |test_sema|Aparat_za_kafu:inst|Selector17~3                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector17~4                                                              ; |test_sema|Aparat_za_kafu:inst|Selector17~4                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector17~5                                                              ; |test_sema|Aparat_za_kafu:inst|Selector17~5                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector17~6                                                              ; |test_sema|Aparat_za_kafu:inst|Selector17~6                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_refund[7]                                                               ; |test_sema|Aparat_za_kafu:inst|r_refund[7]                                                               ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector23~3                                                              ; |test_sema|Aparat_za_kafu:inst|Selector23~3                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector23~4                                                              ; |test_sema|Aparat_za_kafu:inst|Selector23~4                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector23~5                                                              ; |test_sema|Aparat_za_kafu:inst|Selector23~5                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector23~6                                                              ; |test_sema|Aparat_za_kafu:inst|Selector23~6                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_refund[1]                                                               ; |test_sema|Aparat_za_kafu:inst|r_refund[1]                                                               ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product[3]~99                                                     ; |test_sema|Aparat_za_kafu:inst|r_price_product[3]~99                                                     ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product[2]~102                                                    ; |test_sema|Aparat_za_kafu:inst|r_price_product[2]~102                                                    ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product[4]~105                                                    ; |test_sema|Aparat_za_kafu:inst|r_price_product[4]~105                                                    ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product[1]~110                                                    ; |test_sema|Aparat_za_kafu:inst|r_price_product[1]~110                                                    ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~81 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~81 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[0]~149                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[0]~149                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~76 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~76 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector2~27                                                              ; |test_sema|Aparat_za_kafu:inst|Selector2~27                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector2~29                                                              ; |test_sema|Aparat_za_kafu:inst|Selector2~29                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]~225                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]~225                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]~228                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]~228                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector18~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector18~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector19~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector19~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector20~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector20~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector21~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector21~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector22~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector22~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector24~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector24~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~59sexp                                                             ; |test_sema|Aparat_za_kafu:inst|p_comb~59sexp                                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|LessThan1~2sexp                                                           ; |test_sema|Aparat_za_kafu:inst|LessThan1~2sexp                                                           ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~61sexp                                                             ; |test_sema|Aparat_za_kafu:inst|p_comb~61sexp                                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~47sexp4                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~47sexp4                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp1                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp1                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp2                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp2                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp3                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp3                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp4                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp4                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~63sexpbal                                                          ; |test_sema|Aparat_za_kafu:inst|p_comb~63sexpbal                                                          ; dataout          ;
+; |test_sema|i_refound                                                                                     ; |test_sema|i_refound~corein                                                                              ; dataout          ;
+; |test_sema|i_milk                                                                                        ; |test_sema|i_milk~corein                                                                                 ; dataout          ;
+; |test_sema|i_cgocolate                                                                                   ; |test_sema|i_cgocolate~corein                                                                            ; dataout          ;
+; |test_sema|i_sugar_valid                                                                                 ; |test_sema|i_sugar_valid~corein                                                                          ; dataout          ;
+; |test_sema|i_coffe                                                                                       ; |test_sema|i_coffe~corein                                                                                ; dataout          ;
+; |test_sema|i_water                                                                                       ; |test_sema|i_water~corein                                                                                ; dataout          ;
+; |test_sema|i_tea                                                                                         ; |test_sema|i_tea~corein                                                                                  ; dataout          ;
+; |test_sema|i_product_sel[3]                                                                              ; |test_sema|i_product_sel[3]~corein                                                                       ; dataout          ;
+; |test_sema|i_sugar[1]                                                                                    ; |test_sema|i_sugar[1]~corein                                                                             ; dataout          ;
+; |test_sema|i_sugar[0]                                                                                    ; |test_sema|i_sugar[0]~corein                                                                             ; dataout          ;
+; |test_sema|o_product_delivery_sel[3]                                                                     ; |test_sema|o_product_delivery_sel[3]                                                                     ; padio            ;
+; |test_sema|o_money_refund_value[7]                                                                       ; |test_sema|o_money_refund_value[7]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[5]                                                                       ; |test_sema|o_money_refund_value[5]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[4]                                                                       ; |test_sema|o_money_refund_value[4]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[3]                                                                       ; |test_sema|o_money_refund_value[3]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[2]                                                                       ; |test_sema|o_money_refund_value[2]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[1]                                                                       ; |test_sema|o_money_refund_value[1]                                                                       ; padio            ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~237                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~237                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~239                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~239                                            ; dataout          ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                               ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                         ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~32 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~32 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~44 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~44 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~46 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~46 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~54 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~54 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~55 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~55 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~56 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~56 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~77                                             ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~77                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~89                                             ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~89                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~15 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~15 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~24 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~24 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~25 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~25 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~27 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~27 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~28 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~28 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~56 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~56 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector2~17                                                              ; |test_sema|Aparat_za_kafu:inst|Selector2~17                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]                                                ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]                                                ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~57                                                                 ; |test_sema|Aparat_za_kafu:inst|p_comb~57                                                                 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~66                                                                 ; |test_sema|Aparat_za_kafu:inst|p_comb~66                                                                 ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector17~3                                                              ; |test_sema|Aparat_za_kafu:inst|Selector17~3                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector17~4                                                              ; |test_sema|Aparat_za_kafu:inst|Selector17~4                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector17~5                                                              ; |test_sema|Aparat_za_kafu:inst|Selector17~5                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector17~6                                                              ; |test_sema|Aparat_za_kafu:inst|Selector17~6                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_refund[7]                                                               ; |test_sema|Aparat_za_kafu:inst|r_refund[7]                                                               ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector23~3                                                              ; |test_sema|Aparat_za_kafu:inst|Selector23~3                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector23~4                                                              ; |test_sema|Aparat_za_kafu:inst|Selector23~4                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector23~5                                                              ; |test_sema|Aparat_za_kafu:inst|Selector23~5                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector23~6                                                              ; |test_sema|Aparat_za_kafu:inst|Selector23~6                                                              ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_refund[1]                                                               ; |test_sema|Aparat_za_kafu:inst|r_refund[1]                                                               ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product[3]~99                                                     ; |test_sema|Aparat_za_kafu:inst|r_price_product[3]~99                                                     ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product[2]~102                                                    ; |test_sema|Aparat_za_kafu:inst|r_price_product[2]~102                                                    ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product[4]~105                                                    ; |test_sema|Aparat_za_kafu:inst|r_price_product[4]~105                                                    ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product[1]~110                                                    ; |test_sema|Aparat_za_kafu:inst|r_price_product[1]~110                                                    ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~81 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add0|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~81 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[0]~149                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[0]~149                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~76 ; |test_sema|Aparat_za_kafu:inst|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~76 ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector2~27                                                              ; |test_sema|Aparat_za_kafu:inst|Selector2~27                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector2~29                                                              ; |test_sema|Aparat_za_kafu:inst|Selector2~29                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]~225                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]~225                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]~228                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[7]~228                                            ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector18~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector18~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector19~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector19~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector20~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector20~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector21~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector21~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector22~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector22~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|Selector24~9                                                              ; |test_sema|Aparat_za_kafu:inst|Selector24~9                                                              ; pexpout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~59sexp                                                             ; |test_sema|Aparat_za_kafu:inst|p_comb~59sexp                                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|LessThan1~2sexp                                                           ; |test_sema|Aparat_za_kafu:inst|LessThan1~2sexp                                                           ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~61sexp                                                             ; |test_sema|Aparat_za_kafu:inst|p_comb~61sexp                                                             ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~47sexp4                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~47sexp4                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp1                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp1                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp2                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp2                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp3                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp3                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp4                                                            ; |test_sema|Aparat_za_kafu:inst|p_comb~52sexp4                                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|p_comb~63sexpbal                                                          ; |test_sema|Aparat_za_kafu:inst|p_comb~63sexpbal                                                          ; dataout          ;
+; |test_sema|i_refound                                                                                     ; |test_sema|i_refound~corein                                                                              ; dataout          ;
+; |test_sema|i_rstb                                                                                        ; |test_sema|i_rstb~corein                                                                                 ; dataout          ;
+; |test_sema|i_milk                                                                                        ; |test_sema|i_milk~corein                                                                                 ; dataout          ;
+; |test_sema|i_cgocolate                                                                                   ; |test_sema|i_cgocolate~corein                                                                            ; dataout          ;
+; |test_sema|i_sugar_valid                                                                                 ; |test_sema|i_sugar_valid~corein                                                                          ; dataout          ;
+; |test_sema|i_coffe                                                                                       ; |test_sema|i_coffe~corein                                                                                ; dataout          ;
+; |test_sema|i_water                                                                                       ; |test_sema|i_water~corein                                                                                ; dataout          ;
+; |test_sema|i_tea                                                                                         ; |test_sema|i_tea~corein                                                                                  ; dataout          ;
+; |test_sema|i_product_sel[3]                                                                              ; |test_sema|i_product_sel[3]~corein                                                                       ; dataout          ;
+; |test_sema|i_sugar[1]                                                                                    ; |test_sema|i_sugar[1]~corein                                                                             ; dataout          ;
+; |test_sema|i_sugar[0]                                                                                    ; |test_sema|i_sugar[0]~corein                                                                             ; dataout          ;
+; |test_sema|o_product_delivery_sel[3]                                                                     ; |test_sema|o_product_delivery_sel[3]                                                                     ; padio            ;
+; |test_sema|o_money_refund_value[7]                                                                       ; |test_sema|o_money_refund_value[7]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[5]                                                                       ; |test_sema|o_money_refund_value[5]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[4]                                                                       ; |test_sema|o_money_refund_value[4]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[3]                                                                       ; |test_sema|o_money_refund_value[3]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[2]                                                                       ; |test_sema|o_money_refund_value[2]                                                                       ; padio            ;
+; |test_sema|o_money_refund_value[1]                                                                       ; |test_sema|o_money_refund_value[1]                                                                       ; padio            ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~237                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[2]~237                                            ; dataout          ;
+; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~239                                            ; |test_sema|Aparat_za_kafu:inst|r_price_product_counter[1]~239                                            ; dataout          ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed May 24 16:27:39 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off DiplomskiRad -c DiplomskiRad
+Info: Using vector source file "C:/Users/Lazar/OneDrive/Desktop/Moj diplomski novija verzija/Diplomski/test_sema.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of test_sema.vwf called DiplomskiRad.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      56.98 %
+Info: Number of transitions in simulation is 2497
+Info: Vector file test_sema.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Wed May 24 16:27:39 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

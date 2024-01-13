@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.900 ns
+From           : i_money_value[1]
+To             : Aparat_za_kafu:inst|r_price_product_counter[6]
+From Clock     : --
+To Clock       : SCKL
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.100 ns
+From           : Aparat_za_kafu:inst|o_product_delivery_sel[3]
+To             : o_product_delivery_sel[3]
+From Clock     : SCKL
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.400 ns
+From           : i_refound
+To             : Aparat_za_kafu:inst|r_st_present.state_bit_1
+From Clock     : --
+To Clock       : SCKL
+Failed Paths   : 0
+
+Type           : Clock Setup: 'SCKL'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 57.14 MHz ( period = 17.500 ns )
+From           : Aparat_za_kafu:inst|r_price_product_counter[3]
+To             : Aparat_za_kafu:inst|r_price_product_counter[7]
+From Clock     : SCKL
+To Clock       : SCKL
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
